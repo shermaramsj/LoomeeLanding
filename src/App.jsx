@@ -22,6 +22,19 @@ import {
   RotateCcw,
   Share2
 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+// Import components from their respective folders
+import Navbar from './components/Navbar/Navbar';
+import HeroSection from './components/Hero/HeroSection';
+import FeaturesSection from './components/Features/FeaturesSection';
+import HowItWorksSection from './components/HowItWorks/HowItWorksSection';
+import BenefitsSection from './components/Benefits/BenefitsSection';
+import PricingSection from './components/Pricing/PricingSection';
+import PricingModal from './components/Pricing/PricingModal';
+import CTASection from './components/CTA/CTASection';
+import Footer from './components/Footer/Footer';
+
 import './App.css';
 
 // Animation variants
@@ -133,6 +146,7 @@ function Navbar({ scrolled, onGetStarted }) {
     </motion.nav>
   );
 }
+
 
 // Hero Section
 function HeroSection({ onGetStarted }) {
